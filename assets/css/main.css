@@ -704,7 +704,7 @@ section {
 
 .hero h2{
   
-  background: -webkit-linear-gradient(gold, white);
+  background: -webkit-linear-gradient(rgb(247, 243, 224), white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 25px;
@@ -712,6 +712,14 @@ section {
   font-weight: 300;
   animation: fadeInDown 1s both 0.2s;
 }
+
+.textGradient{
+  
+  background: -webkit-linear-gradient(rgb(247, 246, 241), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 @media (max-width: 768px) {
   .hero h2 {
@@ -1112,25 +1120,27 @@ section {
 --------------------------------------------------------------*/
 .about .about-img {
   position: relative;
-  margin: 60px 0 0 60px;
+align-items: center;
+  margin: 0px 0 0 0px;
 }
 
-.about .about-img:before {
+/* .about .about-img:before {
   position: absolute;
   inset: -60px 0 0 -60px;
   z-index: -1;
   content: "";
   background: url("../img/about-bg.png") top left;
   background-repeat: no-repeat;
-}
+} */
 
 @media (max-width: 575px) {
   .about .about-img {
-    margin: 30px 0 0 30px;
+    margin: 0px 0 0 0px;
+   
   }
 
   .about .about-img:before {
-    inset: -30px 0 0 -30px;
+    inset: 0px 0 0 0px;
   }
 }
 
@@ -3035,11 +3045,12 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
+  color: black;
   text-transform: uppercase;
 }
 
 .footer .footer-content .footer-info h3 span {
-  color: var(--color-primary);
+  color: black;
 }
 
 .footer .footer-content .footer-info p {
@@ -3047,13 +3058,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: var(--font-primary);
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .footer .footer-content h4 {
   font-size: 16px;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-black);
   position: relative;
   padding-bottom: 12px;
   margin-bottom: 15px;
