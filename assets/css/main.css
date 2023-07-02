@@ -191,12 +191,12 @@ section {
 
 .scroll-top:hover {
   background: rgba(var(--color-primary-rgb), 0.85);
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .scroll-top.active {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 /*--------------------------------------------------------------
@@ -212,9 +212,11 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  padding: 15px 0;
+  padding: 4px 0;
   transition: all 0.5s;
   z-index: 997;
+
+  
 }
 
 .header.sticked {
@@ -674,6 +676,24 @@ section {
   }
 }
 
+span{
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-image: linear-gradient(
+ to right,
+ #f6e27a 45%,
+ #f6f2c0 50%,
+ #f6e27a 55%,
+ #cb9b51 78%
+ );
+  color:transparent;
+  -webkit-background-clip:text;
+
+}
+
 /*--------------------------------------------------------------
 # Carousel Hero Section
 --------------------------------------------------------------*/
@@ -689,7 +709,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 140px 0 60px 0;
+  padding: 56px 0 40px 0;
 }
 
 .hero .carousel-item {
@@ -735,7 +755,7 @@ section {
 }
 
 .hero .img {
-  margin-bottom: 40px;
+  margin-bottom: 4px;
   animation: fadeInDownLite 1s both;
 }
 
